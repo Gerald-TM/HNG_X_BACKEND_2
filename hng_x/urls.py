@@ -16,8 +16,25 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from rest_framework import permissions
+from drf_yasg2.views import get_schema_view
+from drf_yasg2 import openapi
+
+schema_view = get_schema_view( # new
+    openapi.Info(
+        title="Person API",
+        default_version="v1",
+        description="A simple REST API that performs CRUD operations on person model",
+        terms_of_service="https://www.google.com/policies/terms/",
+        contact=openapi.Contact(email="taiyemusa1582@gmail.com"),
+        license=openapi.License(name="BSD License"),
+        ),
+        public=True,
+        permission_classes=(permissions.AllowAny,),
+    )
 
 urlpatterns = [
     path("admin/", admin.site.urls),
     path('api/', include('restapi.urls')),
+    path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
 ]
