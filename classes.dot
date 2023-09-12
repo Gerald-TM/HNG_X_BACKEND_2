@@ -1,0 +1,18 @@
+digraph "classes" {
+rankdir=BT
+charset="utf-8"
+"restapi.serializers.PersonSerializer.Meta" [color="black", fontcolor="black", label=<{Meta|fields : list<br ALIGN="LEFT"/>model<br ALIGN="LEFT"/>|}>, shape="record", style="solid"];
+"restapi.migrations.0001_initial.Migration" [color="black", fontcolor="black", label=<{Migration|dependencies : list<br ALIGN="LEFT"/>initial : bool<br ALIGN="LEFT"/>operations : list<br ALIGN="LEFT"/>|}>, shape="record", style="solid"];
+"restapi.migrations.0002_alter_person_name.Migration" [color="black", fontcolor="black", label=<{Migration|dependencies : list<br ALIGN="LEFT"/>operations : list<br ALIGN="LEFT"/>|}>, shape="record", style="solid"];
+"restapi.migrations.0003_alter_person_name.Migration" [color="black", fontcolor="black", label=<{Migration|dependencies : list<br ALIGN="LEFT"/>operations : list<br ALIGN="LEFT"/>|}>, shape="record", style="solid"];
+"restapi.models.Person" [color="black", fontcolor="black", label=<{Person|name : CharField<br ALIGN="LEFT"/>|}>, shape="record", style="solid"];
+"restapi.views.PersonDetail" [color="black", fontcolor="black", label=<{PersonDetail|lookup_field : str<br ALIGN="LEFT"/>serializer_class<br ALIGN="LEFT"/>|get_queryset()<br ALIGN="LEFT"/>}>, shape="record", style="solid"];
+"restapi.views.PersonDetailName" [color="black", fontcolor="black", label=<{PersonDetailName|lookup_field : str<br ALIGN="LEFT"/>serializer_class<br ALIGN="LEFT"/>|get_queryset()<br ALIGN="LEFT"/>}>, shape="record", style="solid"];
+"restapi.views.PersonList" [color="black", fontcolor="black", label=<{PersonList|serializer_class<br ALIGN="LEFT"/>|get_queryset()<br ALIGN="LEFT"/>}>, shape="record", style="solid"];
+"restapi.serializers.PersonSerializer" [color="black", fontcolor="black", label=<{PersonSerializer|<br ALIGN="LEFT"/>|}>, shape="record", style="solid"];
+"restapi.apps.RestapiConfig" [color="black", fontcolor="black", label=<{RestapiConfig|default_auto_field : str<br ALIGN="LEFT"/>name : str<br ALIGN="LEFT"/>|}>, shape="record", style="solid"];
+"restapi.models.Person" -> "restapi.serializers.PersonSerializer.Meta" [arrowhead="diamond", arrowtail="none", fontcolor="green", label="model", style="solid"];
+"restapi.serializers.PersonSerializer" -> "restapi.views.PersonDetail" [arrowhead="diamond", arrowtail="none", fontcolor="green", label="serializer_class", style="solid"];
+"restapi.serializers.PersonSerializer" -> "restapi.views.PersonDetailName" [arrowhead="diamond", arrowtail="none", fontcolor="green", label="serializer_class", style="solid"];
+"restapi.serializers.PersonSerializer" -> "restapi.views.PersonList" [arrowhead="diamond", arrowtail="none", fontcolor="green", label="serializer_class", style="solid"];
+}

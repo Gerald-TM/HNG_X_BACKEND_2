@@ -1,0 +1,20 @@
+digraph "packages" {
+rankdir=BT
+charset="utf-8"
+"restapi" [color="black", label=<restapi>, shape="box", style="solid"];
+"restapi.admin" [color="black", label=<restapi.admin>, shape="box", style="solid"];
+"restapi.apps" [color="black", label=<restapi.apps>, shape="box", style="solid"];
+"restapi.migrations" [color="black", label=<restapi.migrations>, shape="box", style="solid"];
+"restapi.migrations.0001_initial" [color="black", label=<restapi.migrations.0001_initial>, shape="box", style="solid"];
+"restapi.migrations.0002_alter_person_name" [color="black", label=<restapi.migrations.0002_alter_person_name>, shape="box", style="solid"];
+"restapi.migrations.0003_alter_person_name" [color="black", label=<restapi.migrations.0003_alter_person_name>, shape="box", style="solid"];
+"restapi.models" [color="black", label=<restapi.models>, shape="box", style="solid"];
+"restapi.serializers" [color="black", label=<restapi.serializers>, shape="box", style="solid"];
+"restapi.tests" [color="black", label=<restapi.tests>, shape="box", style="solid"];
+"restapi.urls" [color="black", label=<restapi.urls>, shape="box", style="solid"];
+"restapi.views" [color="black", label=<restapi.views>, shape="box", style="solid"];
+"restapi.admin" -> "restapi.models" [arrowhead="open", arrowtail="none"];
+"restapi.serializers" -> "restapi.models" [arrowhead="open", arrowtail="none"];
+"restapi.views" -> "restapi.models" [arrowhead="open", arrowtail="none"];
+"restapi.views" -> "restapi.serializers" [arrowhead="open", arrowtail="none"];
+}
