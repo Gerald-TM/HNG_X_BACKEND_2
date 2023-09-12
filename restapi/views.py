@@ -6,7 +6,7 @@ from .models import Person
 # Create your views here.
 class PersonList(generics.ListCreateAPIView):
     serializer_class = PersonSerializer
-    queryset = Person.objects.all()
+    queryset = Person.objects.all().order_by('id')
     
 
     # def get_queryset(self):
