@@ -1,5 +1,5 @@
 # HNG_X Task_2
-## A Simple REST API that performs CRUD operations a "person" model/resource.
+## A Simple REST API that performs CRUD operations on a "person" model/resource.
 
 - **Hosted REST API endpoint:** [https://myrestapi.onrender.com/api/](https://myrestapi.onrender.com/api/)
 
@@ -19,14 +19,15 @@
   **Documentation by Swagger** - [https://myrestapi.onrender.com/swagger/](https://myrestapi.onrender.com/swagger/)
 
 
-  example image
+  Example image:
   ![swagger_doc](https://github.com/Gerald-TM/HNG_X_BACKEND_2/assets/105176000/5e98fa36-ddb1-44df-8c93-20fb31d65578)
+
 
 
   **Documentation by ReDoc** - [https://myrestapi.onrender.com/redoc/](https://myrestapi.onrender.com/redoc/)
 
 
-  example image
+  Example image:
   ![redoc_doc](https://github.com/Gerald-TM/HNG_X_BACKEND_2/assets/105176000/5af81025-9408-44b2-8290-5bdabdfa1dea)
 
   ---
