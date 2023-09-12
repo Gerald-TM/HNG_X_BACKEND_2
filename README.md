@@ -1,4 +1,4 @@
-![redoc_doc](https://github.com/Gerald-TM/HNG_X_BACKEND_2/assets/105176000/80fe8310-8e6c-47db-b000-10a3145e18a1)# HNG_X Task_2
+# HNG_X Task_2
 ## A Simple REST API that performs CRUD operations a "person" model/resource.
 
 - **Hosted REST API endpoint:** [https://myrestapi.onrender.com/api/](https://myrestapi.onrender.com/api/)
@@ -23,7 +23,7 @@
 2. cd into hng_backend_2 directory.
 3. Create and activate a virtual environment with the command  `pipenv shell`.
 4. Install requirements and dependencies with the command `pipenv install requirements.txt`.
-5. Run the local server with the command `python manage.py runserver`
+5. Run the local server with the command 'python manage.py runserver'.
   
   
 
