@@ -3,14 +3,14 @@
 
 - **Hosted REST API endpoint:** [https://myrestapi.onrender.com/api/](https://myrestapi.onrender.com/api/)
 
-- **UML and E-R diagrams:**
+- **Modelling diagrams:**
 
   
-  **UML**
+  **UML:**
   
   ![uml](https://github.com/Gerald-TM/HNG_X_BACKEND_2/assets/105176000/c062dacf-a937-4728-b5a0-4b28345ac5f2)
 
-  **ERD**
+  **ERD:**
   
   ![erd](https://github.com/Gerald-TM/HNG_X_BACKEND_2/assets/105176000/c767bd5e-258a-4c5c-94be-294abe28309a)
 
